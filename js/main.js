@@ -1425,6 +1425,73 @@
   }
 
   // =========================================================================
+  // PARTNER SECTION CONTROLLERS (FILTERS & CTA INTEGRATION)
+  // =========================================================================
+  function initPartnerFilters() {
+    const partnerFilterBtns = document.querySelectorAll('.partner-filter-btn');
+    const partnerCards = document.querySelectorAll('.partner-card');
+    if (!partnerFilterBtns.length || !partnerCards.length) return;
+
+    partnerFilterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filterVal = btn.getAttribute('data-partner-filter');
+
+        // Update active class & accessibility attributes
+        partnerFilterBtns.forEach((b) => {
+          const isActive = b === btn;
+          b.classList.toggle('active', isActive);
+          b.setAttribute('aria-selected', String(isActive));
+        });
+
+        // Filter partner cards with smooth micro-animation
+        partnerCards.forEach((card) => {
+          const cardCategory = card.getAttribute('data-partner-category');
+          const isMatch = filterVal === 'all' || cardCategory === filterVal;
+
+          if (isMatch) {
+            card.style.display = 'flex';
+            requestAnimationFrame(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0) scale(1)';
+            });
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(12px) scale(0.96)';
+            setTimeout(() => {
+              if (card.style.opacity === '0') {
+                card.style.display = 'none';
+              }
+            }, 250);
+          }
+        });
+      });
+    });
+  }
+
+  function initPartnerCTA() {
+    const partnerInquireBtn = document.getElementById('partnerInquireBtn');
+    if (!partnerInquireBtn) return;
+
+    partnerInquireBtn.addEventListener('click', () => {
+      // Find partnership radio option
+      const partnerRadio = document.querySelector('input[name="entry.258844178"][value="Strategic Partnership"]');
+      if (partnerRadio) {
+        partnerRadio.checked = true;
+        partnerRadio.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+
+      // Pre-populate description if empty
+      const descInput = document.getElementById('projectDesc');
+      if (descInput && !descInput.value.trim()) {
+        descInput.placeholder = 'Tell us about your agency, platform integration, or strategic collaboration goals...';
+        setTimeout(() => {
+          descInput.focus();
+        }, 500);
+      }
+    });
+  }
+
+  // =========================================================================
   // INITIALIZE EVERYTHING ON DOM READY
   // =========================================================================
   document.addEventListener('DOMContentLoaded', () => {
@@ -1442,6 +1509,8 @@
     initSaasDashboardViews();
     initWebflowBreakpointSwitcher();
     initDesignSystemTokenSwitcher();
+    initPartnerFilters();
+    initPartnerCTA();
 
     console.log('⚡ Astrix Digital - Studio System initialized successfully.');
   });

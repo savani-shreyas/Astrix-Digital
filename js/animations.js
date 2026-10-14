@@ -15,7 +15,7 @@
     if (prefersReducedMotion) return;
 
     const revealElements = document.querySelectorAll(
-      '.reveal-fade, .service-panel, .why-card, .process-card, .tech-card, .expect-card, .accordion-item'
+      '.reveal-fade, .service-panel, .why-card, .process-card, .tech-card, .expect-card, .accordion-item, .partner-card, .collab-card'
     );
 
     if (!revealElements.length) return;
