@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma to Shopify Development — Astrix Digital</title>
+  <meta name="description"
+    content="Turn approved Figma designs into bespoke, responsive Shopify 2.0 storefronts. Custom Liquid sections, fast cart drawers, and 100% design fidelity.">
+  <link rel="canonical" href="https://astrixdigital.com/services/figma-to-shopify">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body class="page-body">
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-container">
+      <a href="../../index.html" class="brand-link" aria-label="Astrix Digital Homepage">
+        <img src="../../assets/images/logo.png" alt="Astrix Digital" class="header-logo" width="170" height="42">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list" role="list">
+          <li class="nav-item"><a href="../../index.html" class="nav-link">Home</a></li>
+          <li class="nav-item nav-item-dropdown">
+            <a href="../../services.html" class="nav-link active">Services ▾</a>
+            <div class="nav-dropdown" role="menu">
+              <a href="../../services.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">All Services</span>
+                <span class="dropdown-item-desc">Comprehensive capabilities overview</span>
+              </a>
+              <a href="../../services-shopify.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Figma to Shopify</span>
+                <span class="dropdown-item-desc">Liquid 2.0 & Custom storefronts</span>
+              </a>
+              <a href="../../services-webflow.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Webflow Development</span>
+                <span class="dropdown-item-desc">Client-First CMS & Interactions</span>
+              </a>
+              <a href="../../services-custom.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Custom Development</span>
+                <span class="dropdown-item-desc">Bespoke frontend code & APIs</span>
+              </a>
+              <a href="../../services-webapps.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Web Apps & Software</span>
+                <span class="dropdown-item-desc">Tailored SaaS & Web Applications</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../../work.html" class="nav-link">Work</a></li>
+          <li class="nav-item"><a href="../../about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="../../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-sm header-calendly-btn">
+          <svg class="btn-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          <span>Book Call</span>
+        </a>
+
+        <a href="../../contact.html" class="btn btn-primary btn-sm header-cta">
+          <span>Start a Project</span>
+          <svg class="btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobileNav">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-list" role="list">
+          <li><a href="../../index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="../../services.html" class="mobile-nav-link">Services Overview</a></li>
+          <li><a href="../../services-shopify.html" class="mobile-nav-link active" style="padding-left: 28px; font-size: 0.95rem;">↳ Figma to Shopify</a></li>
+          <li><a href="../../services-webflow.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Webflow Development</a></li>
+          <li><a href="../../services-custom.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Custom Development</a></li>
+          <li><a href="../../services-webapps.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Web Apps & Software</a></li>
+          <li><a href="../../work.html" class="mobile-nav-link">Selected Work</a></li>
+          <li><a href="../../about.html" class="mobile-nav-link">About Astrix Digital</a></li>
+          <li><a href="../../contact.html" class="mobile-nav-link">Contact</a></li>
+          <li><a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer"
+              class="mobile-nav-link mobile-nav-calendly">📅 Book Discovery Call</a></li>
+          <li><a href="../../contact.html" class="mobile-nav-link mobile-nav-cta">Start a Project</a></li>
+        </ul>
+
+        <div class="mobile-drawer-footer">
+          <div class="drawer-contact-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for new projects Q2/Q3</span>
+          </div>
+          <p class="drawer-email">business.astrixdigital@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <div class="page-eyebrow">SPECIALIZED SERVICE · E-COMMERCE</div>
+        <h1 class="page-title">
+          Figma to Shopify <span class="text-gradient">development.</span>
+        </h1>
+        <p class="page-lead">
+          Turn approved Figma designs into responsive, high-performing Shopify storefronts. We engineer bespoke Shopify 2.0 themes with modular sections, instant slideout carts, and zero bloated app overhead.
+        </p>
+
+        <div class="page-meta-pills">
+          <div class="page-meta-pill">
+            <span>Indicative Timeline:</span>
+            <strong>7–10 Days</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>Architecture:</span>
+            <strong>Shopify Liquid 2.0 & JSON</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>Merchant Control:</span>
+            <strong>100% Theme Editor Customizer</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>Performance Target:</span>
+            <strong>90+ Mobile Core Web Vitals</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Interactive Preview -->
+    <section style="padding: 60px 0; background: var(--color-surface); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="mockup-frame glass-surface glass-reflection" style="max-width: 1040px; margin: 0 auto;">
+          <div class="mockup-topbar">
+            <span class="pill-dot green"></span>
+            <span class="mockup-title">Shopify 2.0 Theme Engine · Interactive Product Template</span>
+          </div>
+          <div class="interactive-pdp-mockup" style="padding: 36px 30px;">
+            <div class="pdp-gallery-strip">
+              <div class="pdp-main-thumb">
+                <div class="pdp-ribbon">Bespoke Atelier</div>
+                <img src="../../assets/projects/ring_yellow_gold.jpg" alt="Solstice Pavé Band" class="pdp-ring-img" id="pdpJewelryImg">
+              </div>
+            </div>
+            <div class="pdp-details">
+              <span class="pdp-kicker">Custom Shopify Theme Section</span>
+              <h4>Solstice Pavé Band · <span id="pdpMetalTitle">18k Yellow Gold</span></h4>
+              <div class="pdp-price"><span id="pdpPrice">$2,100</span> <span class="tax-note">Tax Included</span></div>
+
+              <div class="pdp-variants">
+                <span class="variant-label">Metal Selection: <strong id="pdpMetalName" class="metal-value-text">18k Yellow Gold</strong></span>
+                <div class="swatches" role="radiogroup" aria-label="Select Metal Type">
+                  <button type="button" class="swatch gold active" data-metal="gold" data-name="18k Yellow Gold"
+                    data-price="$2,100" title="18k Yellow Gold" aria-label="18k Yellow Gold"></button>
+                  <button type="button" class="swatch white-gold" data-metal="white-gold"
+                    data-name="18k White Gold" data-price="$2,250" title="18k White Gold" aria-label="18k White Gold"></button>
+                  <button type="button" class="swatch rose-gold" data-metal="rose-gold" data-name="18k Rose Gold"
+                    data-price="$2,100" title="18k Rose Gold" aria-label="18k Rose Gold"></button>
+                </div>
+              </div>
+
+              <div class="pdp-btn-group">
+                <button type="button" class="mock-btn-pdp" id="pdpAddToCartBtn">Add to Bag - <span id="pdpBtnPrice">$2,100</span></button>
+              </div>
+
+              <div class="pdp-perks">
+                <span>✓ Pure Liquid 2.0 Component</span>
+                <span>✓ Zero Third-Party App Latency</span>
+                <span>✓ Instant AJAX Bag Drawer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What This Service Covers -->
+    <section class="service-detail-section" style="background: var(--color-surface-subtle);">
+      <div class="container">
+        <div class="section-header-block center-aligned">
+          <div class="section-eyebrow">TECHNICAL SCOPE</div>
+          <h2 class="section-title">
+            What our Shopify development <span class="text-gradient">covers.</span>
+          </h2>
+          <p class="section-description max-w-700">
+            Every storefront is handcrafted for high conversions, rapid page loads, and effortless content updates by your merchandising team.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 40px;">
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Custom Theme Architecture</h4>
+            <p class="service-feature-text">
+              We write clean, modular Shopify 2.0 themes from scratch using Liquid and JSON templates. You get complete visual differentiation without marketplace theme bloat.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Modular Sections & Blocks</h4>
+            <p class="service-feature-text">
+              Full control in the Shopify Theme Editor. Reorder sections, swap banners, adjust color schemes, and publish seasonal promotions without writing a line of code.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Custom Product & Collection Templates</h4>
+            <p class="service-feature-text">
+              Bespoke variant selectors, dynamic size guides, interactive specification tabs, shoppable lookbooks, and customized bundle flows.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Instant AJAX Slideout Cart</h4>
+            <p class="service-feature-text">
+              Smooth side-drawer cart with tier-based free shipping progress bars, dynamic upsell recommendations, and instant quantity recalculations.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Third-Party App Integrations</h4>
+            <p class="service-feature-text">
+              Seamlessly wire Klaviyo, customer reviews (Yotpo/Judge.me), subscriptions (Recharge), analytics, and customer support widgets without dragging down your speed.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Speed & Core Web Vitals QA</h4>
+            <p class="service-feature-text">
+              Critical CSS inline rendering, next-gen image formats (AVIF/WebP), deferred scripts, and responsive picture tags to ensure fast mobile checkout.
+            </p>
+          </div>
+        </div>
+
+        <!-- Typical Deliverables Box -->
+        <div class="deliverables-box">
+          <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--color-ink);">Typical Project Deliverables</h3>
+          <p style="color: var(--color-ink-muted); margin-top: 8px;">What you receive at the conclusion of your Shopify build:</p>
+
+          <div class="deliverables-grid">
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">✓</div>
+              <div>
+                <div class="deliverable-title">Complete Shopify 2.0 Theme</div>
+                <div class="deliverable-desc">Full source code delivered via private GitHub repository or directly into your Shopify store admin.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">✓</div>
+              <div>
+                <div class="deliverable-title">Modular Drag-and-Drop Library</div>
+                <div class="deliverable-desc">Full suite of flexible sections configured with schema settings for your marketing team.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">✓</div>
+              <div>
+                <div class="deliverable-title">Responsive Multi-Device QA</div>
+                <div class="deliverable-desc">Verification across real iOS, Android, tablet, and desktop screens for flawless checkout.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">✓</div>
+              <div>
+                <div class="deliverable-title">Video Handover Walkthrough</div>
+                <div class="deliverable-desc">Personalized video guides showing your staff how to edit collections, banners, and settings.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicative Delivery Timeline & Qualification -->
+        <div class="timeline-qual-callout">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-ink); margin-bottom: 6px;">
+            Indicative Timeline: 7–10 Business Days
+          </h4>
+          <p>
+            Indicative timelines apply to appropriately scoped projects once required content, assets, access, and approvals are ready. Final delivery dates depend on project complexity and agreed requirements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Shopify FAQs -->
+    <section class="section-faq" style="background: var(--color-surface);">
+      <div class="container faq-container">
+        <div class="faq-intro">
+          <div class="section-eyebrow">SHOPIFY QUESTIONS</div>
+          <h2 class="section-title">Common questions about Shopify development.</h2>
+          <p class="section-description">Clear answers regarding themes, migrations, and our engineering standards.</p>
+        </div>
+
+        <div class="accordion-list">
+          <div class="accordion-item active">
+            <button type="button" class="accordion-header" id="s-faq-1" aria-expanded="true" aria-controls="s-content-1">
+              <span class="faq-q">Can you develop my exact Figma design into Shopify?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="s-content-1" role="region" aria-labelledby="s-faq-1">
+              <div class="accordion-body">
+                Yes. We translate Figma designs pixel-for-pixel into native Shopify Liquid 2.0 templates. We replicate your exact typography scales, spacing grids, button variants, and responsive layouts.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="s-faq-2" aria-expanded="false" aria-controls="s-content-2">
+              <span class="faq-q">Will my team be able to edit sections without code?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="s-content-2" role="region" aria-labelledby="s-faq-2" hidden>
+              <div class="accordion-body">
+                Yes. We build all sections using Shopify Online Store 2.0 schemas. This lets you reorder sections, edit text, swap images, and create new pages directly in the visual Shopify Theme Customizer.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="s-faq-3" aria-expanded="false" aria-controls="s-content-3">
+              <span class="faq-q">Do you handle app migrations and tracking scripts?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="s-content-3" role="region" aria-labelledby="s-faq-3" hidden>
+              <div class="accordion-body">
+                Yes. We ensure your analytics pixels, review apps, and email capture tools are integrated cleanly through Theme App Extensions or webhooks without slowing down your initial page load.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Call to Action -->
+    <section class="section-final-cta">
+      <div class="container">
+        <div class="final-cta-card glass-surface glass-reflection">
+          <div class="cta-badge">LET'S BUILD YOUR STOREFRONT</div>
+          <h2 class="cta-title">
+            Have a Shopify design ready? <span class="text-gradient">Let's build it properly.</span>
+          </h2>
+          <p class="cta-support-text">
+            Share your Figma files and project requirements. We'll provide a clear scope, confirm the 7–10 day timeline, and outline the development plan.
+          </p>
+          <div class="cta-btn-group">
+            <a href="../../contact.html" class="btn btn-primary btn-lg">
+              <span>Start Shopify Project</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a href="../../work.html" class="btn btn-secondary btn-lg">
+              <span>View Shopify Case Studies</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m7 7 10 10" />
+                <path d="M17 7v10H7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-container">
+            <img src="../../assets/images/logo.png" alt="Astrix Digital" class="footer-logo" width="180" height="45">
+          </div>
+          <p class="footer-mission">
+            Astrix Digital is a digital development studio creating high-performing Shopify stores, Webflow websites, and custom digital products. Built with design intent and engineering rigor.
+          </p>
+          <div class="footer-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Select Client Projects</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-link-list" role="list">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../services.html">Services Overview</a></li>
+            <li><a href="../../work.html">Selected Work</a></li>
+            <li><a href="../../about.html">About Astrix Digital</a></li>
+            <li><a href="../../contact.html">Contact & Inquiries</a></li>
+            <li><a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer">Book Discovery Call</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-link-list" role="list">
+            <li><a href="../../services-shopify.html">Figma to Shopify</a></li>
+            <li><a href="../../services-webflow.html">Webflow Development</a></li>
+            <li><a href="../../services-custom.html">Custom Website Development</a></li>
+            <li><a href="../../services-webapps.html">Web Apps & Bespoke Software</a></li>
+            <li><a href="../../services.html">All Capabilities & Matrix</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect-col">
+          <h4 class="footer-heading">Studio Inquiries</h4>
+          <p class="footer-subtext">Direct email to our lead developers and creative directors:</p>
+          <a href="mailto:business.astrixdigital@gmail.com" class="footer-email-link">business.astrixdigital@gmail.com</a>
+
+          <a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer" class="footer-calendly-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            <span>Book Call</span>
+          </a>
+
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/astrix.digital" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://wa.me/919662887288?text=I%20have%20a%20query%20for%20website%20development" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9l-5.05.9"></path>
+                <path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Astrix Digital. All rights reserved.
+        </p>
+
+        <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+          <span>Back to top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/animations.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>
+

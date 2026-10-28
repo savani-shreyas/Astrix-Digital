@@ -136,6 +136,25 @@
         'Instant customer review verification badges and ingredient transparency cards',
         'Tested across dozens of mobile devices for smooth thumb-reach usability'
       ]
+    },
+    everlight: {
+      id: 'everlight',
+      title: 'Everlight Jewelry — Bespoke Product Interface',
+      subtitle: 'Handcrafted custom web experience featuring interactive 360-degree gem visualization.',
+      category: 'Bespoke Frontend Architecture',
+      discipline: 'Pure Semantic HTML5, CSS & Vanilla JS',
+      speed: '0.4s FCP / 100 Performance Score',
+      image: 'assets/projects/everlight_Jewelry.png',
+      technologies: ['Vanilla ES6+', 'CSS Clamp() Design Tokens', 'WebP Multi-Angle Engine', 'Zero Third-Party Bloat'],
+      challenge: 'High-end jewelry buyers expect flawless visual rendering without clumsy page reloads or lagging touch interactions on mobile browsers.',
+      solution: 'We engineered a bespoke, lightweight product interface from the ground up using pure semantic HTML5, CSS custom properties, and sub-millisecond Vanilla JavaScript finish toggles.',
+      features: [
+        'Hardware-accelerated metal finish toggle (Rose Gold, White Gold, Yellow Gold)',
+        'Fluid clamp() typographic hierarchy that adapts to any screen width',
+        'Instantaneous zero-latency responsive interactions without external libraries',
+        'Full keyboard accessibility conforming to WCAG 2.2 AA guidelines',
+        'Ultra-lightweight footprint loading under 50KB total asset transfer'
+      ]
     }
   };
 
@@ -227,10 +246,12 @@
   function initHeaderScroll() {
     const handleScroll = () => {
       const scrollPos = window.scrollY || document.documentElement.scrollTop;
-      if (scrollPos > 24) {
-        elements.header.classList.add('scrolled');
-      } else {
-        elements.header.classList.remove('scrolled');
+      if (elements.header) {
+        if (scrollPos > 24) {
+          elements.header.classList.add('scrolled');
+        } else {
+          elements.header.classList.remove('scrolled');
+        }
       }
 
       // Back to top visibility
@@ -299,7 +320,7 @@
             const href = link.getAttribute('href');
             if (href === `#${currentId}`) {
               link.classList.add('active');
-            } else {
+            } else if (href && href.startsWith('#')) {
               link.classList.remove('active');
             }
           });
@@ -453,7 +474,32 @@
     const filterBtns = elements.filterBtns;
     const viewport = elements.projectRailViewport;
     const track = elements.projectRailTrack;
-    if (!filterBtns.length || !track) return;
+    const gridContainer = document.getElementById('projectGrid');
+
+    if (!filterBtns.length) return;
+
+    // Support standalone portfolio grid on work.html / work/index.html
+    if (!track && gridContainer) {
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const targetCategory = btn.dataset.filter;
+          filterBtns.forEach((b) => {
+            const isMatch = (b === btn);
+            b.classList.toggle('active', isMatch);
+            b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+          });
+          const cards = gridContainer.querySelectorAll('.project-card');
+          cards.forEach((card) => {
+            const cat = card.dataset.category;
+            const matches = (targetCategory === 'all' || cat === targetCategory);
+            card.style.display = matches ? 'flex' : 'none';
+          });
+        });
+      });
+      return;
+    }
+
+    if (!track) return;
 
     let activeFilter = 'all';
 
@@ -612,9 +658,13 @@
       elements.modalSpecDiscipline.textContent = data.discipline;
       elements.modalSpecSpeed.textContent = data.speed;
 
-      // Populate Artwork
+      // Populate Artwork with relative prefix resolver for subpages
+      const cssLink = document.querySelector('link[rel="stylesheet"]')?.getAttribute('href') || '';
+      const prefix = cssLink.includes('../../') ? '../../' : (cssLink.includes('../') ? '../' : '');
+      const artworkSrc = data.image.startsWith('assets/') ? (prefix + data.image) : data.image;
+
       elements.modalArtwork.innerHTML = `
-        <img src="${data.image}" alt="${data.title}" loading="lazy">
+        <img src="${artworkSrc}" alt="${data.title}" loading="lazy">
       `;
 
       // Populate Features

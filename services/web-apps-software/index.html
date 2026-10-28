@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Applications & Custom Software â€” Astrix Digital</title>
+  <meta name="description"
+    content="Custom web applications, dashboards, customer portals, and bespoke digital products. Built with Next.js, TypeScript, PostgreSQL, and scalable API architecture.">
+  <link rel="canonical" href="https://astrixdigital.com/services/web-apps-software">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body class="page-body">
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-container">
+      <a href="../../index.html" class="brand-link" aria-label="Astrix Digital Homepage">
+        <img src="../../assets/images/logo.png" alt="Astrix Digital" class="header-logo" width="170" height="42">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list" role="list">
+          <li class="nav-item"><a href="../../index.html" class="nav-link">Home</a></li>
+          <li class="nav-item nav-item-dropdown">
+            <a href="../../services.html" class="nav-link active">Services â–¾</a>
+            <div class="nav-dropdown" role="menu">
+              <a href="../../services.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">All Services</span>
+                <span class="dropdown-item-desc">Comprehensive capabilities overview</span>
+              </a>
+              <a href="../../services-shopify.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Figma to Shopify</span>
+                <span class="dropdown-item-desc">Liquid 2.0 & Custom storefronts</span>
+              </a>
+              <a href="../../services-webflow.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Webflow Development</span>
+                <span class="dropdown-item-desc">Client-First CMS & Interactions</span>
+              </a>
+              <a href="../../services-custom.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Custom Development</span>
+                <span class="dropdown-item-desc">Bespoke frontend code & APIs</span>
+              </a>
+              <a href="../../services-webapps.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Web Apps & Software</span>
+                <span class="dropdown-item-desc">Tailored SaaS & Web Applications</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="../../work.html" class="nav-link">Work</a></li>
+          <li class="nav-item"><a href="../../about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="../../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-sm header-calendly-btn">
+          <svg class="btn-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          <span>Book Call</span>
+        </a>
+
+        <a href="../../contact.html" class="btn btn-primary btn-sm header-cta">
+          <span>Start a Project</span>
+          <svg class="btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobileNav">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-list" role="list">
+          <li><a href="../../index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="../../services.html" class="mobile-nav-link">Services Overview</a></li>
+          <li><a href="../../services-shopify.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">â†³ Figma to Shopify</a></li>
+          <li><a href="../../services-webflow.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">â†³ Webflow Development</a></li>
+          <li><a href="../../services-custom.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">â†³ Custom Development</a></li>
+          <li><a href="../../services-webapps.html" class="mobile-nav-link active" style="padding-left: 28px; font-size: 0.95rem;">â†³ Web Apps & Software</a></li>
+          <li><a href="../../work.html" class="mobile-nav-link">Selected Work</a></li>
+          <li><a href="../../about.html" class="mobile-nav-link">About Astrix Digital</a></li>
+          <li><a href="../../contact.html" class="mobile-nav-link">Contact</a></li>
+          <li><a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer"
+              class="mobile-nav-link mobile-nav-calendly">ðŸ“… Book Discovery Call</a></li>
+          <li><a href="../../contact.html" class="mobile-nav-link mobile-nav-cta">Start a Project</a></li>
+        </ul>
+
+        <div class="mobile-drawer-footer">
+          <div class="drawer-contact-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for new projects Q2/Q3</span>
+          </div>
+          <p class="drawer-email">business.astrixdigital@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <div class="page-eyebrow">SPECIALIZED SERVICE Â· BESPOKE SOFTWARE ENGINEERING</div>
+        <h1 class="page-title">
+          Web applications & <span class="text-gradient">custom software.</span>
+        </h1>
+        <p class="page-lead">
+          Transform Figma designs into resilient web applications, customer portals, internal tools, and SaaS MVPs. Engineered with end-to-end type safety, scalable databases, and pixel-precise interface fidelity.
+        </p>
+
+        <div class="page-meta-pills">
+          <div class="page-meta-pill">
+            <span>Delivery Timeline:</span>
+            <strong>Requirements-Driven (Discovery First)</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>Core Stack:</span>
+            <strong>Next.js / TypeScript / Node.js / PostgreSQL</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>Architecture:</span>
+            <strong>Serverless & Microservices Ready</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>IP Ownership:</span>
+            <strong>100% Client-Owned Repository</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Interactive Preview -->
+    <section style="padding: 60px 0; background: var(--color-surface); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="mockup-frame glass-surface glass-reflection" style="max-width: 1040px; margin: 0 auto;">
+          <div class="mockup-topbar">
+            <div class="mockup-status-group">
+              <span class="pill-dot green"></span>
+              <span class="mockup-live-text">APPLICATION ARCHITECTURE PREVIEW</span>
+            </div>
+            <span class="mockup-title">Enterprise Dashboard & System Telemetry</span>
+          </div>
+
+          <div style="padding: 28px; background: var(--color-surface-subtle); border-radius: 12px; margin: 20px;">
+            <!-- Top Metric Bar -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+              <div style="background: #FFFFFF; padding: 18px; border-radius: 10px; border: 1px solid var(--color-border);">
+                <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--color-ink-muted); letter-spacing: 0.05em;">API Gateway</div>
+                <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 6px;">
+                  <span style="font-size: 1.4rem; font-weight: 800; color: var(--color-ink);">99.98%</span>
+                  <span style="font-size: 0.75rem; color: var(--color-success); font-weight: 600;">âœ“ Healthy</span>
+                </div>
+                <div style="font-size: 0.75rem; color: var(--color-ink-muted); margin-top: 4px;">Edge latency avg: 14ms</div>
+              </div>
+
+              <div style="background: #FFFFFF; padding: 18px; border-radius: 10px; border: 1px solid var(--color-border);">
+                <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--color-ink-muted); letter-spacing: 0.05em;">Security & Auth</div>
+                <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 6px;">
+                  <span style="font-size: 1.4rem; font-weight: 800; color: var(--color-ink);">RBAC Active</span>
+                  <span style="font-size: 0.75rem; color: var(--color-primary); font-weight: 600;">JWT + Session</span>
+                </div>
+                <div style="font-size: 0.75rem; color: var(--color-ink-muted); margin-top: 4px;">Role-level data isolation</div>
+              </div>
+
+              <div style="background: #FFFFFF; padding: 18px; border-radius: 10px; border: 1px solid var(--color-border);">
+                <div style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: var(--color-ink-muted); letter-spacing: 0.05em;">Database Cluster</div>
+                <div style="display: flex; align-items: baseline; gap: 8px; margin-top: 6px;">
+                  <span style="font-size: 1.4rem; font-weight: 800; color: var(--color-ink);">PostgreSQL</span>
+                  <span style="font-size: 0.75rem; color: var(--color-success); font-weight: 600;">Prisma ORM</span>
+                </div>
+                <div style="font-size: 0.75rem; color: var(--color-ink-muted); margin-top: 4px;">Automated daily snapshots</div>
+              </div>
+            </div>
+
+            <!-- Dashboard Split View -->
+            <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px;">
+              <!-- Data Table Mockup -->
+              <div style="background: #FFFFFF; padding: 20px; border-radius: 10px; border: 1px solid var(--color-border);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                  <span style="font-weight: 700; font-size: 0.9rem; color: var(--color-ink);">User Access & Permissions</span>
+                  <span style="font-size: 0.75rem; background: rgba(13, 85, 245, 0.08); color: var(--color-primary); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Live Sync</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.82rem;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--color-surface-subtle); border-radius: 6px;">
+                    <div>
+                      <strong style="color: var(--color-ink);">Alexander Ross</strong>
+                      <span style="color: var(--color-ink-muted); display: block; font-size: 0.75rem;">alex@enterprise.io</span>
+                    </div>
+                    <span style="padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; background: #E8F5E9; color: #2E7D32;">Admin</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--color-surface-subtle); border-radius: 6px;">
+                    <div>
+                      <strong style="color: var(--color-ink);">Elena Vance</strong>
+                      <span style="color: var(--color-ink-muted); display: block; font-size: 0.75rem;">elena@enterprise.io</span>
+                    </div>
+                    <span style="padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; background: #E3F2FD; color: #1565C0;">Editor</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--color-surface-subtle); border-radius: 6px;">
+                    <div>
+                      <strong style="color: var(--color-ink);">Marcus Thorne</strong>
+                      <span style="color: var(--color-ink-muted); display: block; font-size: 0.75rem;">marcus@enterprise.io</span>
+                    </div>
+                    <span style="padding: 2px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; background: #F5F5F5; color: #616161;">Auditor</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Terminal & Schema Preview -->
+              <div style="background: #111318; color: #F7F9FC; padding: 20px; border-radius: 10px; font-family: var(--font-mono); font-size: 0.78rem; line-height: 1.6; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div style="color: #697386; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
+                    <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #0D55F5;"></span>
+                    <span>schema.prisma (Generated Types)</span>
+                  </div>
+                  <div style="color: #64B5F6;">model <span style="color: #FFF;">WorkspaceUser</span> {</div>
+                  <div style="padding-left: 14px; color: #E0E0E0;">
+                    id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String &nbsp;&nbsp;@id @default(uuid())<br>
+                    email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String &nbsp;&nbsp;@unique<br>
+                    role &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Role &nbsp;&nbsp;&nbsp;&nbsp;@default(VIEWER)<br>
+                    tenantId &nbsp;&nbsp;String<br>
+                    createdAt &nbsp;DateTime @default(now())
+                  </div>
+                  <div style="color: #64B5F6;">}</div>
+                </div>
+                <div style="border-top: 1px solid #2A2E39; padding-top: 10px; margin-top: 12px; color: #81C784;">
+                  âœ“ Prisma Client Generated (TypeScript v5.x)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scope Breakdown -->
+    <section class="service-detail-section" style="background: var(--color-surface-subtle);">
+      <div class="container">
+        <div class="section-header-block center-aligned">
+          <div class="section-eyebrow">CAPABILITIES & SCOPE</div>
+          <h2 class="section-title">
+            Built for scalability, security, and <span class="text-gradient">performance.</span>
+          </h2>
+          <p class="section-description max-w-700">
+            From initial wireframes and schema diagrams to final production deployments, we build applications that scale with your users while keeping codebase maintenance straightforward.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 40px;">
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Full-Stack Web Applications</h4>
+            <p class="service-feature-text">
+              Custom web apps powered by Next.js, React, Node.js, and TypeScript. Server-side rendering (SSR), dynamic edge routing, and responsive mobile-first interfaces.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Internal Tools & Customer Portals</h4>
+            <p class="service-feature-text">
+              Intuitive dashboards, customer account portals, administrative backends, and reporting tools that automate manual team workflows with zero UI clutter.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">API Integration & Custom Middleware</h4>
+            <p class="service-feature-text">
+              Robust connections with Stripe, PayPal, Twilio, OpenAI, CRMs, ERPs, and custom REST/GraphQL endpoints with comprehensive error handling and webhooks.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Relational Databases & Data Modeling</h4>
+            <p class="service-feature-text">
+              Clean relational schema modeling with PostgreSQL, Supabase, and Prisma ORM. Optimized queries, indexing strategies, and automated schema migrations.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Role-Based Access Control (RBAC)</h4>
+            <p class="service-feature-text">
+              Fine-grained user permission tiers, secure multi-tenant isolation, encrypted session tokens, and strict OWASP top 10 security compliance.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Automated CI/CD & Cloud Infrastructure</h4>
+            <p class="service-feature-text">
+              Automated testing pipelines, preview environments on pull requests, and production deployments via Vercel, AWS, or Cloudflare with zero downtime.
+            </p>
+          </div>
+        </div>
+
+        <!-- Typical Deliverables Box -->
+        <div class="deliverables-box">
+          <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--color-ink);">Software Deliverables & Handover Package</h3>
+          <p style="color: var(--color-ink-muted); margin-top: 8px;">What you receive upon application completion:</p>
+
+          <div class="deliverables-grid">
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">âœ“</div>
+              <div>
+                <div class="deliverable-title">100% Source Code Ownership</div>
+                <div class="deliverable-desc">Full transfer of the GitHub or GitLab repository containing clean TypeScript code, test suites, and documentation.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">âœ“</div>
+              <div>
+                <div class="deliverable-title">Database Schema & Migrations</div>
+                <div class="deliverable-desc">Complete SQL migration scripts, database ERD diagrams, and seed files for effortless local environment spin-up.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">âœ“</div>
+              <div>
+                <div class="deliverable-title">API Documentation & Test Collection</div>
+                <div class="deliverable-desc">Detailed Swagger / Postman documentation outlining every endpoint, parameter schema, and authentication header.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">âœ“</div>
+              <div>
+                <div class="deliverable-title">30-Day Post-Launch Warranty</div>
+                <div class="deliverable-desc">Direct engineering support covering bug fixes, edge-case resolution, and environment adjustments following launch.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Requirements-Driven Timeline Notice -->
+        <div class="timeline-qual-callout">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-ink); margin-bottom: 6px;">
+            Timeline: Requirements-Driven (Discovery First)
+          </h4>
+          <p>
+            Unlike static websites or storefronts, software applications vary substantially based on user journeys, data relations, authentication tiers, and third-party integrations. We conduct a preliminary discovery sprint to produce a definitive specification and phased milestone schedule before any development begins.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Software FAQs -->
+    <section class="section-faq" style="background: var(--color-surface);">
+      <div class="container faq-container">
+        <div class="faq-intro">
+          <div class="section-eyebrow">APPLICATION QUESTIONS</div>
+          <h2 class="section-title">Common questions about custom software.</h2>
+          <p class="section-description">Clear answers regarding technology choices, architecture, security, and handover.</p>
+        </div>
+
+        <div class="accordion-list">
+          <div class="accordion-item active">
+            <button type="button" class="accordion-header" id="app-faq-1" aria-expanded="true" aria-controls="app-content-1">
+              <span class="faq-q">How do you estimate timelines and milestones for web applications?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="app-content-1" role="region" aria-labelledby="app-faq-1">
+              <div class="accordion-body">
+                We review your Figma screens, user flows, and technical requirements to create a detailed scoping document. Projects are divided into clear milestones (e.g., Sprint 1: Auth & Schema, Sprint 2: Core Data Views, Sprint 3: External Integrations, Sprint 4: QA & Testing). Each milestone has clear deliverables and acceptance criteria.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="app-faq-2" aria-expanded="false" aria-controls="app-content-2">
+              <span class="faq-q">Who owns the intellectual property and source code?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="app-content-2" role="region" aria-labelledby="app-faq-2" hidden>
+              <div class="accordion-body">
+                You own 100% of the code, database schema, design assets, and intellectual property. The repository is created in or transferred directly to your organization's GitHub or GitLab account upon project sign-off.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="app-faq-3" aria-expanded="false" aria-controls="app-content-3">
+              <span class="faq-q">What tech stack do you recommend for new web applications?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="app-content-3" role="region" aria-labelledby="app-faq-3" hidden>
+              <div class="accordion-body">
+                Our default stack is TypeScript, Next.js (React), Tailwind CSS, PostgreSQL, and Prisma or Supabase. This modern combination provides exceptional developer velocity, strong end-to-end type safety, global edge deployment capabilities, and a large hiring pool for your future in-house engineering team.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="app-faq-4" aria-expanded="false" aria-controls="app-content-4">
+              <span class="faq-q">Can you integrate with our existing backend or internal APIs?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="app-content-4" role="region" aria-labelledby="app-faq-4" hidden>
+              <div class="accordion-body">
+                Yes. We regularly build frontend interfaces and middleware layers that connect with legacy databases, custom internal REST APIs, GraphQL endpoints, and third-party SaaS platforms via authenticated proxies and webhook listeners.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="app-faq-5" aria-expanded="false" aria-controls="app-content-5">
+              <span class="faq-q">How do you ensure data security and role-based permissions?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="app-content-5" role="region" aria-labelledby="app-faq-5" hidden>
+              <div class="accordion-body">
+                We implement industry-standard authentication patterns with encrypted HTTP-only session cookies, multi-factor authentication (MFA) capabilities, Row-Level Security (RLS) in PostgreSQL, parameterized queries to prevent SQL injection, and strict input validation schemas (Zod).
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="app-faq-6" aria-expanded="false" aria-controls="app-content-6">
+              <span class="faq-q">Do you provide post-launch support and feature development?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="app-content-6" role="region" aria-labelledby="app-faq-6" hidden>
+              <div class="accordion-body">
+                Every project includes 30 days of post-launch warranty support. Following that period, we offer structured monthly engineering retainers for continuous feature releases, dependency updates, and performance monitoring.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Call to Action -->
+    <section class="section-final-cta">
+      <div class="container">
+        <div class="final-cta-card glass-surface glass-reflection">
+          <div class="cta-badge">LET'S BUILD SOFTWARE</div>
+          <h2 class="cta-title">
+            Have a web app or platform to engineer? <span class="text-gradient">Let's build it properly.</span>
+          </h2>
+          <p class="cta-support-text">
+            Send us your Figma files or technical brief. We'll review your scope, propose the most robust architecture, and map out a phased development plan.
+          </p>
+          <div class="cta-btn-group">
+            <a href="../../contact.html" class="btn btn-primary btn-lg">
+              <span>Start Software Inquiry</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              <span>Book Discovery Call</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-logo-container">
+            <img src="../../assets/images/logo.png" alt="Astrix Digital" class="footer-logo" width="170" height="42">
+          </div>
+          <p class="footer-brand-tagline">
+            Specialized digital development studio converting Figma designs into high-performance Shopify storefronts, Webflow websites, and custom software.
+          </p>
+          <div class="footer-availability">
+            <span class="pulse-dot"></span>
+            <span>Accepting new projects Q2/Q3</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="../../services-shopify.html">Figma to Shopify</a></li>
+            <li><a href="../../services-webflow.html">Webflow Development</a></li>
+            <li><a href="../../services-custom.html">Custom Development</a></li>
+            <li><a href="../../services-webapps.html">Web Apps & Software</a></li>
+            <li><a href="../../services.html">All Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="../../work.html">Selected Work</a></li>
+            <li><a href="../../about.html">About Astrix Digital</a></li>
+            <li><a href="../../contact.html">Contact & Inquiries</a></li>
+            <li><a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer">Book a Call</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Direct Inquiry</h4>
+          <p class="footer-contact-text">Ready to discuss your scope? Reach out directly to our engineering team:</p>
+          <a href="mailto:business.astrixdigital@gmail.com" class="footer-email-link">business.astrixdigital@gmail.com</a>
+          <p class="footer-sla-note">Average response time: &lt; 24 business hours</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          Â© <span id="currentYear">2026</span> Astrix Digital. All rights reserved. Precision digital development.
+        </p>
+        <div class="footer-legal-links">
+          <span>Budapest / Global Remote</span>
+          <span>Â·</span>
+          <span>Pixel-Accurate Execution</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js" defer></script>
+  <script src="../../js/animations.js" defer></script>
+</body>
+
+</html>
+

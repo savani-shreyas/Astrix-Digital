@@ -41,15 +41,35 @@
 
       <nav class="desktop-nav" aria-label="Primary Navigation">
         <ul class="nav-list" role="list">
-          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
-          <li class="nav-item"><a href="#why-us" class="nav-link">Why Us</a></li>
-          <li class="nav-item"><a href="#process" class="nav-link">Process</a></li>
-          <li class="nav-item"><a href="#capabilities" class="nav-link">Capabilities</a></li>
-          <li class="nav-item"><a href="#partners" class="nav-link">Partners</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item nav-item-dropdown">
+            <a href="services.html" class="nav-link">Services ▾</a>
+            <div class="nav-dropdown" role="menu">
+              <a href="services.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">All Services</span>
+                <span class="dropdown-item-desc">Comprehensive capabilities overview</span>
+              </a>
+              <a href="services-shopify.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Figma to Shopify</span>
+                <span class="dropdown-item-desc">Liquid 2.0 & Custom storefronts</span>
+              </a>
+              <a href="services-webflow.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Webflow Development</span>
+                <span class="dropdown-item-desc">Client-First CMS & Interactions</span>
+              </a>
+              <a href="services-custom.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Custom Development</span>
+                <span class="dropdown-item-desc">Bespoke frontend code & APIs</span>
+              </a>
+              <a href="services-webapps.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Web Apps & Software</span>
+                <span class="dropdown-item-desc">Tailored SaaS & Web Applications</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -66,7 +86,7 @@
           <span>Book Call</span>
         </a>
 
-        <a href="#contact" class="btn btn-primary btn-sm header-cta">
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">
           <span>Start a Project</span>
           <svg class="btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -88,18 +108,18 @@
     <div class="mobile-nav-drawer" id="mobileNav" aria-hidden="true">
       <div class="mobile-nav-inner">
         <ul class="mobile-nav-list" role="list">
-          <li><a href="#hero" class="mobile-nav-link">Home</a></li>
-          <li><a href="#services" class="mobile-nav-link">Services</a></li>
-          <li><a href="#work" class="mobile-nav-link">Selected Work</a></li>
-          <li><a href="#why-us" class="mobile-nav-link">Why Astrix Digital</a></li>
-          <li><a href="#process" class="mobile-nav-link">Development Process</a></li>
-          <li><a href="#capabilities" class="mobile-nav-link">Technologies</a></li>
-          <li><a href="#partners" class="mobile-nav-link">Partner Ecosystem</a></li>
-          <li><a href="#about" class="mobile-nav-link">About the Studio</a></li>
-          <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+          <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+          <li><a href="services.html" class="mobile-nav-link">Services Overview</a></li>
+          <li><a href="services-shopify.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Figma to Shopify</a></li>
+          <li><a href="services-webflow.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Webflow Development</a></li>
+          <li><a href="services-custom.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Custom Development</a></li>
+          <li><a href="services-webapps.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Web Apps & Software</a></li>
+          <li><a href="work.html" class="mobile-nav-link">Selected Work</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About Astrix Digital</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
           <li><a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer"
-              class="mobile-nav-link mobile-nav-calendly">📅 Book Call</a></li>
-          <li><a href="#contact" class="mobile-nav-link mobile-nav-cta">Start a Project</a></li>
+              class="mobile-nav-link mobile-nav-calendly">📅 Book Discovery Call</a></li>
+          <li><a href="contact.html" class="mobile-nav-link mobile-nav-cta">Start a Project</a></li>
         </ul>
 
         <div class="mobile-drawer-footer">
@@ -125,32 +145,20 @@
         <div class="hero-content">
           <div class="hero-badge reveal-fade">
             <span class="badge-dot"></span>
-            <span class="badge-text">Shopify · Webflow · Custom SaaS</span>
+            <span class="badge-text">DESIGN-LED DEVELOPMENT STUDIO</span>
           </div>
 
           <h1 id="hero-heading" class="hero-heading reveal-fade">
-            Digital experiences.<br>
-            <span class="text-gradient">Built to move business forward.</span>
+            Pixel-perfect websites.<br>
+            <span class="text-gradient">Built for real-world performance.</span>
           </h1>
 
           <p class="hero-subtext reveal-fade">
-            Astrix Digital designs and develops high-performing Shopify stores, Webflow websites, and custom SaaS
-            experiences built around your business goals.
+            Astrix Digital turns Figma designs into refined Shopify stores, Webflow websites, and custom digital products. We focus on precise UI, responsive experiences, and development that brings every detail together.
           </p>
 
           <div class="hero-actions reveal-fade">
-            <a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer"
-              class="btn btn-primary btn-lg hero-calendly-btn">
-              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
-              <span>Book Call</span>
-            </a>
-            <a href="#contact" class="btn btn-secondary btn-lg">
+            <a href="contact.html" class="btn btn-primary btn-lg">
               <span>Start a Project</span>
               <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -158,7 +166,7 @@
                 <path d="m12 5 7 7-7 7" />
               </svg>
             </a>
-            <a href="#work" class="btn btn-ghost btn-lg">
+            <a href="work.html" class="btn btn-secondary btn-lg">
               <span>Explore Our Work</span>
               <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -168,20 +176,24 @@
             </a>
           </div>
 
+          <div class="hero-supporting-line reveal-fade" style="margin-top: 18px; font-size: 0.92rem; font-weight: 600; color: var(--color-ink-muted); letter-spacing: 0.04em;">
+            Shopify · Webflow · Custom Development
+          </div>
+
           <div class="hero-meta-strip reveal-fade">
             <div class="meta-item">
-              <span class="meta-label">Engineering Craft</span>
-              <span class="meta-value">Modular & Clean Code</span>
+              <span class="meta-label">Pixel Precision</span>
+              <span class="meta-value">100% Figma Fidelity</span>
             </div>
             <div class="meta-divider" aria-hidden="true"></div>
             <div class="meta-item">
-              <span class="meta-label">Conversion Focus</span>
-              <span class="meta-value">Speed & Measurable UX</span>
+              <span class="meta-label">Responsive Architecture</span>
+              <span class="meta-value">Mobile · Tablet · Desktop</span>
             </div>
             <div class="meta-divider" aria-hidden="true"></div>
             <div class="meta-item">
-              <span class="meta-label">Direct Partnership</span>
-              <span class="meta-value">Senior Engineers & Designers</span>
+              <span class="meta-label">Structured Code</span>
+              <span class="meta-value">Maintainable & Fast</span>
             </div>
           </div>
 
@@ -189,7 +201,8 @@
 
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-art-stage">
-            <div class="art-card art-browser-card float-slow">
+            <div class="art-card art-browser-card float-slow glass-reflection" style="position: relative;">
+              <div class="precision-guide-lines"></div>
               <div class="mock-browser-header">
                 <div class="browser-dots">
                   <span class="dot red"></span>
@@ -201,139 +214,76 @@
                     <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
                     <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                   </svg>
-                  <span>https://everlightjewels.com</span>
+                  <span>astrix.preview/storefront-demo</span>
                 </div>
-                <div class="browser-badge-pill">Shopify Live</div>
+                <div class="precision-guide-badge">8px Grid Verified</div>
               </div>
 
-              <div class="mock-store-content">
-                <img src="assets/projects/everlight_Jewelry.png" alt="Everlight Jewelry Storefront"
+              <div class="mock-store-content" style="position: relative; overflow: hidden;">
+                <img src="assets/projects/everlight_Jewelry.png" alt="Astrix Digital Precision Implementation"
                   class="mock-store-img" width="1810" height="869" loading="eager">
               </div>
             </div>
 
-            <div class="art-card art-telemetry-card float-medium">
+            <div class="art-card art-telemetry-card float-medium glass-surface" style="padding: 22px;">
               <div class="telemetry-header">
                 <div class="telemetry-title">
                   <span class="status-indicator"></span>
-                  <span>Storefront Throughput</span>
+                  <strong style="color: var(--color-ink); font-size: 0.88rem;">Precision Engineering Spec</strong>
                 </div>
-                <span class="telemetry-tag">+38.4% WoW</span>
+                <span class="precision-guide-badge" style="font-size: 0.68rem;">1440px / 390px</span>
               </div>
-              <div class="telemetry-metric">
-                <span class="metric-num">$148,920</span>
-                <span class="metric-sub">Net Gross Merchandise Value</span>
+              <div style="margin: 14px 0; font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-ink-muted); line-height: 1.6; background: rgba(13, 85, 245, 0.04); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(13, 85, 245, 0.1);">
+                <div>--color-brand: #0D55F5;</div>
+                <div>--grid-alignment: 100% tokenized;</div>
+                <div>--responsive-qa: pass (WCAG AA);</div>
               </div>
-              <div class="telemetry-chart-svg">
-                <svg viewBox="0 0 280 80" class="chart-line-svg">
-                  <defs>
-                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stop-color="#145DFF" stop-opacity="0.35" />
-                      <stop offset="100%" stop-color="#145DFF" stop-opacity="0.0" />
-                    </linearGradient>
-                  </defs>
-                  <path d="M 0,65 Q 40,58 70,45 T 140,48 T 210,25 T 280,12 L 280,80 L 0,80 Z" fill="url(#chartGrad)" />
-                  <path d="M 0,65 Q 40,58 70,45 T 140,48 T 210,25 T 280,12" fill="none" stroke="#145DFF"
-                    stroke-width="2.8" stroke-linecap="round" />
-                  <circle cx="210" cy="25" r="4.5" fill="#145DFF" stroke="#FFFFFF" stroke-width="2" />
-                  <circle cx="280" cy="12" r="4.5" fill="#145DFF" stroke="#FFFFFF" stroke-width="2" />
-                </svg>
-              </div>
-              <div class="telemetry-footer">
-                <span class="pill-stat">TTFB: <strong>140ms</strong></span>
-                <span class="pill-stat">CVR: <strong>4.92%</strong></span>
-                <span class="pill-stat">LCP: <strong>0.8s</strong></span>
+              <div class="telemetry-footer" style="padding-top: 10px; border-top: 1px solid var(--color-border);">
+                <span class="pill-stat">Design Fidelity: <strong>100%</strong></span>
+                <span class="pill-stat">Breakpoints: <strong>4</strong></span>
+                <span class="pill-stat">Code: <strong>Clean ES6+</strong></span>
               </div>
             </div>
 
-            <div class="art-card art-emblem-badge float-fast">
+            <div class="art-card art-emblem-badge float-fast glass-surface">
               <div class="emblem-inner">
                 <div class="emblem-shape">
-                  <img src="./assets/images/favicon.png" alt="Astrix Digital Logo" class="emblem-logo">
+                  <img src="assets/images/favicon.png" alt="Astrix Mark" class="emblem-logo">
                 </div>
                 <div class="emblem-text">
-                  <strong>Astrix Certified</strong>
-                  <span>Engineered with Liquid & Webflow</span>
+                  <strong style="color: var(--color-ink);">Astrix Standard</strong>
+                  <span>Figma to Production Code</span>
                 </div>
               </div>
             </div>
 
             <div class="art-card art-code-pill float-slow-reverse">
               <span class="code-dot"></span>
-              <code>theme.liquid · 99 Performance</code>
+              <code>Figma Design System ➔ Clean Code</code>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-ticker" aria-label="Core Studio Capabilities">
-      <div class="ticker-wrapper" id="capabilitiesMarquee">
-        <div class="ticker-track">
-          <div class="ticker-item">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Shopify Development</span>
+    <section class="section-trust" aria-label="Brand Commitments">
+      <div class="container">
+        <div class="trust-commitments-grid">
+          <div class="trust-item">
+            <span class="trust-item-bullet"></span>
+            <span class="trust-item-text">Pixel-focused implementation</span>
           </div>
-          <div class="ticker-item">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Webflow Development</span>
+          <div class="trust-item">
+            <span class="trust-item-bullet"></span>
+            <span class="trust-item-text">Responsive by design</span>
           </div>
-          <div class="ticker-item">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">SaaS Web Applications</span>
+          <div class="trust-item">
+            <span class="trust-item-bullet"></span>
+            <span class="trust-item-text">Clean, structured development</span>
           </div>
-          <div class="ticker-item">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">UI/UX Design</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Custom Web Experiences</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Liquid & Storefront APIs</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Conversion Rate Architecture</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Design Systems</span>
-          </div>
-
-          <div class="ticker-item" aria-hidden="true">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Shopify Development</span>
-          </div>
-          <div class="ticker-item" aria-hidden="true">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Webflow Development</span>
-          </div>
-          <div class="ticker-item" aria-hidden="true">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">SaaS Web Applications</span>
-          </div>
-          <div class="ticker-item" aria-hidden="true">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">UI/UX Design</span>
-          </div>
-          <div class="ticker-item" aria-hidden="true">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Custom Web Experiences</span>
-          </div>
-          <div class="ticker-item" aria-hidden="true">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Liquid & Storefront APIs</span>
-          </div>
-          <div class="ticker-item" aria-hidden="true">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Conversion Rate Architecture</span>
-          </div>
-          <div class="ticker-item" aria-hidden="true">
-            <span class="ticker-bullet"></span>
-            <span class="ticker-text">Design Systems</span>
+          <div class="trust-item">
+            <span class="trust-item-bullet"></span>
+            <span class="trust-item-text">Clear project communication</span>
           </div>
         </div>
       </div>
@@ -342,12 +292,12 @@
     <section class="section-work" id="work" aria-labelledby="work-heading">
       <div class="container work-header-container">
         <div class="section-header-block">
-          <div class="section-eyebrow">PORTFOLIO DEMONSTRATIONS</div>
+          <div class="section-eyebrow">SELECTED WORK</div>
           <h2 id="work-heading" class="section-title">
-            Selected work. <span class="text-gradient">Built with intent.</span>
+            Built with precision. <span class="text-gradient">Designed with purpose.</span>
           </h2>
           <p class="section-description">
-            A closer look at digital experiences designed around real products, brands, and business goals.
+            A closer look at digital experiences and development work shaped around the details that matter.
           </p>
         </div>
 
@@ -679,19 +629,28 @@
           <span>Interactive Project Rail · Hover or Drag to Explore · Click Any Card for Deep Case Study</span>
         </div>
       </div>
+
+      <div class="container" style="text-align: center; margin-top: 36px;">
+        <a href="work.html" class="btn btn-secondary btn-lg">
+          <span>View All Work</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+      </div>
     </section>
 
     <section class="section-services" id="services" aria-labelledby="services-heading">
       <div class="container">
 
         <div class="section-header-block center-aligned">
-          <div class="section-eyebrow">DISCIPLINED DIGITAL CAPABILITIES</div>
+          <div class="section-eyebrow">WHAT WE BUILD</div>
           <h2 id="services-heading" class="section-title">
-            From first idea to <span class="text-gradient">finished product.</span>
+            From design files to <span class="text-gradient">digital products.</span>
           </h2>
           <p class="section-description max-w-700">
-            We operate at the exact intersection of design craft and engineering discipline. Every digital solution is
-            tailored to your brand's growth and technical demands.
+            Design-led development for businesses that care about how their digital products look, feel, and perform.
           </p>
         </div>
 
@@ -726,8 +685,8 @@
               </ul>
 
               <div class="service-actions">
-                <a href="#contact" class="btn btn-secondary btn-sm" data-service-select="Shopify Store">
-                  <span>Enquire for Shopify</span>
+                <a href="services-shopify.html" class="btn btn-primary btn-sm">
+                  <span>Explore Shopify Development</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -818,8 +777,8 @@
               </ul>
 
               <div class="service-actions">
-                <a href="#contact" class="btn btn-secondary btn-sm" data-service-select="Webflow Site">
-                  <span>Enquire for Webflow</span>
+                <a href="services-webflow.html" class="btn btn-primary btn-sm">
+                  <span>Explore Webflow Development</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -915,39 +874,38 @@
             </div>
           </div>
 
-          <div class="service-panel" id="service-saas">
+          <div class="service-panel" id="service-custom">
             <div class="service-info">
-              <div class="service-num">03 / WEB APPLICATIONS</div>
-              <h3 class="service-title">Custom SaaS & Web Applications</h3>
+              <div class="service-num">03 / BESPOKE FRONTEND</div>
+              <h3 class="service-title">Custom Website Development</h3>
               <p class="service-summary">
-                Purpose-built digital products and dashboards designed around your workflows, users, and business
-                requirements.
+                Build websites that require custom-coded layouts, specialized functionality, and implementation beyond a standard platform setup.
               </p>
 
               <ul class="service-feature-list" role="list">
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Custom SaaS frontends & customer portals</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Semantic HTML5, Modular CSS & Clean Vanilla JS</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Internal admin dashboards & operational tooling</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Pixel-accurate implementation of custom Figma layouts</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Custom CRM and sales pipeline interfaces</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Hardware-accelerated animations & subtle micro-interactions</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Interactive data visualization & SVG chart telemetry</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Zero-bloat architectures achieving 95+ Core Web Vitals</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Friction-free authentication & onboarding flows</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Headless CMS & custom REST/GraphQL API connections</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> REST API & GraphQL data integration</li>
+                  </svg> Indicative timeline: 15–20 days for scoped projects</li>
               </ul>
 
               <div class="service-actions">
-                <a href="#contact" class="btn btn-secondary btn-sm" data-service-select="Custom SaaS / App">
-                  <span>Enquire for Custom SaaS</span>
+                <a href="services-custom.html" class="btn btn-primary btn-sm">
+                  <span>Explore Custom Development</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -1147,38 +1105,38 @@
             </div>
           </div>
 
-          <div class="service-panel reverse" id="service-uiux">
+          <div class="service-panel reverse" id="service-webapps">
             <div class="service-info">
-              <div class="service-num">04 / PRODUCT DESIGN</div>
-              <h3 class="service-title">UI/UX & Digital Experiences</h3>
+              <div class="service-num">04 / CUSTOM SOFTWARE</div>
+              <h3 class="service-title">Web Apps and Bespoke Software</h3>
               <p class="service-summary">
-                Clear, usable interfaces that connect business objectives with intuitive customer experiences.
+                Build web applications and tailored software according to the project's requirements. Functionality, architecture, integrations, features, and timeline are defined after discovery.
               </p>
 
               <ul class="service-feature-list" role="list">
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> User interface & experience design (Figma systems)</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Tailored user interfaces, portals, and operational tools</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Comprehensive tokenized design systems</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Secure authentication, sessions & role-based permissions</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Wireframes, rapid prototypes & user flows</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Interactive telemetry, data visualizations & reactive state</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Conversion-focused landing page restructuring</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Backend API integrations, Webhooks & databases</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Product interface auditing & friction elimination</li>
-                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2.5">
+                  </svg> Discovery-first scoping: clear architecture before build</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2.5">
                     <polyline points="20 6 9 17 4 12" />
-                  </svg> Design-to-code handover with zero drift</li>
+                  </svg> Timeline determined transparently by requirements & scope</li>
               </ul>
 
               <div class="service-actions">
-                <a href="#contact" class="btn btn-secondary btn-sm" data-service-select="UI/UX Design">
-                  <span>Enquire for UI/UX</span>
+                <a href="services-webapps.html" class="btn btn-primary btn-sm">
+                  <span>Discuss Your Requirements</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14" />
                     <path d="m12 5 7 7-7 7" />
@@ -1251,96 +1209,65 @@
     <section class="section-why" id="why-us" aria-labelledby="why-heading">
       <div class="container">
         <div class="section-header-block center-aligned">
-          <div class="section-eyebrow">OUR OPERATING PHILOSOPHY</div>
+          <div class="section-eyebrow">WHY ASTRIX DIGITAL</div>
           <h2 id="why-heading" class="section-title">
-            Good design gets attention.<br>
-            <span class="text-gradient">Good development makes it work.</span>
+            Every detail <span class="text-gradient">matters.</span>
           </h2>
           <p class="section-description max-w-700">
-            Most studios treat design and development as separate departments with conflicting agendas. At Astrix
-            Digital, they are executed as a single, cohesive discipline.
+            We don't rely on generic agency claims. Here is the genuine engineering value and disciplined approach we bring to every digital build.
           </p>
         </div>
 
-        <div class="why-grid">
+        <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
           <div class="why-card">
             <div class="why-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-              </svg>
-            </div>
-            <h3 class="why-title">Business-First Thinking</h3>
-            <p class="why-desc">
-              We never design in a vacuum. Every layout, interaction, and technical choice connects directly to
-              measurable goals: conversions, customer retention, and operational efficiency.
-            </p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2">
                 <rect width="18" height="18" x="3" y="3" rx="2" />
-                <path d="m9 9 6 6m0-6-6 6" />
+                <path d="M9 9h6v6H9z" />
               </svg>
             </div>
-            <h3 class="why-title">Design & Dev Unified</h3>
+            <h3 class="why-title">Pixel-Conscious Execution</h3>
             <p class="why-desc">
-              Zero translation loss between Figma and production. The engineers building your site understand typography
-              and micro-interactions just as deeply as database schemas.
+              We carefully translate approved designs into functional interfaces, paying attention to spacing, typography, alignment, and component behavior.
             </p>
           </div>
 
           <div class="why-card">
             <div class="why-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2">
                 <rect width="14" height="20" x="5" y="2" rx="2" />
                 <path d="M12 18h.01" />
               </svg>
             </div>
-            <h3 class="why-title">Responsive by Default</h3>
+            <h3 class="why-title">Responsive Experiences</h3>
             <p class="why-desc">
-              Mobile is not an afterthought or an awkward compression of desktop. Every breakpoint is custom-composed
-              for natural thumb reach, fast tap targets, and crisp readability.
+              We build and test layouts across mobile, tablet, and desktop screens so touch targets, line lengths, and layouts adapt naturally.
             </p>
           </div>
 
           <div class="why-card">
             <div class="why-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2">
-                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
-              </svg>
-            </div>
-            <h3 class="why-title">Performance-Conscious</h3>
-            <p class="why-desc">
-              Sub-second load times, minimal asset payloads, and perfect Core Web Vitals. We optimize every SVG,
-              stylesheet, and script execution to maximize organic SEO and customer trust.
-            </p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2">
                 <polyline points="16 18 22 12 16 6" />
                 <polyline points="8 6 2 12 8 18" />
               </svg>
             </div>
-            <h3 class="why-title">Maintainable Code</h3>
+            <h3 class="why-title">Structured Development</h3>
             <p class="why-desc">
-              Clean semantic markup, reusable CSS custom properties, and modular JavaScript. Your team or future
-              developers can easily extend and manage the codebase without fragility.
+              We aim for clean, maintainable implementations that are easier to understand, manage, and extend without technical debt.
             </p>
           </div>
 
           <div class="why-card">
             <div class="why-icon-box">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#145DFF" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D55F5" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
               </svg>
             </div>
-            <h3 class="why-title">Clear Direct Communication</h3>
+            <h3 class="why-title">Budget-Conscious Delivery</h3>
             <p class="why-desc">
-              No junior account handlers or endless telephone games. You collaborate directly with the lead designers
-              and engineers building your digital product from day one.
+              We focus on defining the right scope, using appropriate technology, and providing clear expectations before development begins.
             </p>
           </div>
 
@@ -1381,37 +1308,35 @@
     <section class="section-process" id="process" aria-labelledby="process-heading">
       <div class="container">
 
-        <div class="section-header-block">
-          <div class="section-eyebrow">STRUCTURED ROADMAP</div>
+        <div class="section-header-block center-aligned">
+          <div class="section-eyebrow">OUR APPROACH</div>
           <h2 id="process-heading" class="section-title">
-            A clear process. <span class="text-gradient">No unnecessary complexity.</span>
+            A clear process. <span class="text-gradient">Thoughtful execution.</span>
           </h2>
-          <p class="section-description">
-            Four disciplined milestones designed to eliminate ambiguity, keep timelines predictable, and deliver
-            production excellence.
+          <p class="section-description max-w-700">
+            Implementation follows approved designs and agreed project scope. From initial discovery to launch and handover, every phase is engineered with transparent milestones.
           </p>
         </div>
 
         <div class="timeline-container">
           <div class="timeline-progress-bar" id="timelineProgress"></div>
 
-          <div class="process-steps-grid">
+          <div class="process-steps-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
             <div class="process-card" data-step="1">
               <div class="step-badge">
                 <span class="step-num">01</span>
-                <span class="step-pill">Phase 1</span>
+                <span class="step-pill">Stage 1</span>
               </div>
-              <h3 class="step-title">Discover</h3>
+              <h3 class="step-title">Discovery & Requirements</h3>
               <p class="step-summary">
-                Understand the business, target audience, goals, constraints, and requirements.
+                Understand the business goals, technical constraints, target platforms, content readiness, and user requirements.
               </p>
               <div class="step-deliverables">
-                <span class="del-heading">Key Deliverables:</span>
+                <span class="del-heading">Milestone Focus:</span>
                 <ul>
-                  <li>Requirements specification</li>
-                  <li>Architecture & tech stack audit</li>
-                  <li>User journey mapping</li>
-                  <li>Project timeline & milestones</li>
+                  <li>Technical requirements specification</li>
+                  <li>Architecture & platform selection</li>
+                  <li>Asset & credential validation</li>
                 </ul>
               </div>
             </div>
@@ -1419,19 +1344,18 @@
             <div class="process-card" data-step="2">
               <div class="step-badge">
                 <span class="step-num">02</span>
-                <span class="step-pill">Phase 2</span>
+                <span class="step-pill">Stage 2</span>
               </div>
-              <h3 class="step-title">Design</h3>
+              <h3 class="step-title">Scope & Planning</h3>
               <p class="step-summary">
-                Establish the visual direction, structure, user journeys, and interface design.
+                Define the detailed technical scope, architectural boundaries, component hierarchies, and realistic delivery milestones.
               </p>
               <div class="step-deliverables">
-                <span class="del-heading">Key Deliverables:</span>
+                <span class="del-heading">Milestone Focus:</span>
                 <ul>
-                  <li>High-fidelity Figma mockups</li>
-                  <li>Tokenized design system</li>
-                  <li>Mobile & responsive states</li>
-                  <li>Interactive click-through prototype</li>
+                  <li>Detailed scope & deliverables sign-off</li>
+                  <li>Milestone delivery schedule</li>
+                  <li>Integration dependencies mapped</li>
                 </ul>
               </div>
             </div>
@@ -1439,19 +1363,18 @@
             <div class="process-card" data-step="3">
               <div class="step-badge">
                 <span class="step-num">03</span>
-                <span class="step-pill">Phase 3</span>
+                <span class="step-pill">Stage 3</span>
               </div>
-              <h3 class="step-title">Develop</h3>
+              <h3 class="step-title">Design Review & Preparation</h3>
               <p class="step-summary">
-                Build responsive layouts, implement interactions, and integrate the required platform functionality.
+                Review approved Figma files, inspect design tokens, verify responsive states, and configure the development environment.
               </p>
               <div class="step-deliverables">
-                <span class="del-heading">Key Deliverables:</span>
+                <span class="del-heading">Milestone Focus:</span>
                 <ul>
-                  <li>Semantic HTML & modular CSS</li>
-                  <li>Custom Liquid / Webflow CMS build</li>
-                  <li>API integrations & authentication</li>
-                  <li>Cross-browser performance testing</li>
+                  <li>Figma token & component audit</li>
+                  <li>Breakpoints & micro-interactions check</li>
+                  <li>Theme repository & staging setup</li>
                 </ul>
               </div>
             </div>
@@ -1459,23 +1382,130 @@
             <div class="process-card" data-step="4">
               <div class="step-badge">
                 <span class="step-num">04</span>
-                <span class="step-pill">Phase 4</span>
+                <span class="step-pill">Stage 4</span>
               </div>
-              <h3 class="step-title">Launch & Refine</h3>
+              <h3 class="step-title">Development</h3>
               <p class="step-summary">
-                Test the experience, resolve issues, prepare the launch, and identify future improvements.
+                Code clean, modular, responsive layouts, build custom components, implement CMS collections, and wire required integrations.
               </p>
               <div class="step-deliverables">
-                <span class="del-heading">Key Deliverables:</span>
+                <span class="del-heading">Milestone Focus:</span>
                 <ul>
-                  <li>Final QA & accessibility audit</li>
-                  <li>Domain DNS & production deployment</li>
-                  <li>Client video documentation walkthrough</li>
-                  <li>Post-launch monitoring & support</li>
+                  <li>Figma-accurate markup & CSS tokens</li>
+                  <li>Liquid / Webflow / Custom logic build</li>
+                  <li>Modular components & API feeds</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="process-card" data-step="5">
+              <div class="step-badge">
+                <span class="step-num">05</span>
+                <span class="step-pill">Stage 5</span>
+              </div>
+              <h3 class="step-title">Testing & Refinement</h3>
+              <p class="step-summary">
+                Rigorously test responsive behavior across mobile, tablet, and desktop viewports, audit performance, and implement agreed revisions.
+              </p>
+              <div class="step-deliverables">
+                <span class="del-heading">Milestone Focus:</span>
+                <ul>
+                  <li>Physical device QA (iOS & Android)</li>
+                  <li>Core Web Vitals & speed tuning</li>
+                  <li>Client staging feedback refinement</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="process-card" data-step="6">
+              <div class="step-badge">
+                <span class="step-num">06</span>
+                <span class="step-pill">Stage 6</span>
+              </div>
+              <h3 class="step-title">Launch & Handover</h3>
+              <p class="step-summary">
+                Deploy to production, perform final DNS and analytics checks, deliver custom video documentation, and support go-live.
+              </p>
+              <div class="step-deliverables">
+                <span class="del-heading">Milestone Focus:</span>
+                <ul>
+                  <li>Production DNS switch & SSL verify</li>
+                  <li>Personal Loom walkthrough videos</li>
+                  <li>Post-launch monitoring window</li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: DELIVERY TIMELINES -->
+    <section class="section-timelines" id="delivery-timelines" aria-labelledby="timelines-heading">
+      <div class="container">
+        <div class="section-header-block center-aligned">
+          <div class="section-eyebrow">PLANNED FOR DELIVERY</div>
+          <h2 id="timelines-heading" class="section-title">
+            Efficient execution. <span class="text-gradient">No unnecessary complexity.</span>
+          </h2>
+          <p class="section-description max-w-700">
+            Clear time horizons for thoughtfully scoped digital development. We combine rapid iteration with strict engineering standards.
+          </p>
+        </div>
+
+        <div class="timelines-grid">
+          <div class="timeline-card glass-surface glass-reflection">
+            <div class="timeline-badge">E-Commerce & CMS</div>
+            <h3 class="timeline-category">Shopify & Webflow</h3>
+            <div class="timeline-duration">7–10 <span class="duration-unit">Days</span></div>
+            <p class="timeline-scope">
+              Ideal for turnkey Figma-to-Shopify storefronts or Webflow websites with structured components, responsive layouts, and CMS integrations ready for review.
+            </p>
+            <ul class="timeline-checks">
+              <li>Full design-to-code implementation</li>
+              <li>Responsive mobile & tablet optimization</li>
+              <li>Client CMS & theme walkthrough</li>
+            </ul>
+          </div>
+
+          <div class="timeline-card glass-surface glass-reflection featured-timeline">
+            <div class="timeline-badge badge-primary">Custom Frontend</div>
+            <h3 class="timeline-category">Custom-Coded Websites</h3>
+            <div class="timeline-duration">15–20 <span class="duration-unit">Days</span></div>
+            <p class="timeline-scope">
+              For bespoke marketing platforms, interactive web experiences, or sites requiring specialized frontend architecture, custom animations, and API data feeds.
+            </p>
+            <ul class="timeline-checks">
+              <li>Semantic HTML5/CSS3 or modern framework</li>
+              <li>Bespoke interactions & performance audits</li>
+              <li>Production deployment & CI/CD setup</li>
+            </ul>
+          </div>
+
+          <div class="timeline-card glass-surface glass-reflection">
+            <div class="timeline-badge">Bespoke Engineering</div>
+            <h3 class="timeline-category">Web Apps & Software</h3>
+            <div class="timeline-duration timeline-variable">Scope-Driven <span class="duration-unit">Timeline</span></div>
+            <p class="timeline-scope">
+              Tailored web applications, internal tools, and client portals. Timelines and delivery milestones are established transparently following discovery and scoping.
+            </p>
+            <ul class="timeline-checks">
+              <li>Discovery & architecture planning</li>
+              <li>State management & database integration</li>
+              <li>Security, role-based access & testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-notice">
+          <svg class="notice-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+          <p>
+            <strong>Scope & Delivery Commitment:</strong> Indicative timelines apply to appropriately scoped projects once required content, assets, access, and approvals are ready. Final delivery dates depend on project complexity and agreed requirements.
+          </p>
         </div>
       </div>
     </section>
@@ -2198,18 +2228,17 @@
     <section class="section-faq" id="faq" aria-labelledby="faq-heading">
       <div class="container faq-container">
         <div class="faq-intro">
-          <div class="section-eyebrow">FREQUENTLY ASKED QUESTIONS</div>
+          <div class="section-eyebrow">COMMON QUESTIONS</div>
           <h2 id="faq-heading" class="section-title">
-            Answers to common questions.
+            Before we get started.
           </h2>
           <p class="section-description">
-            Transparent insights into how we collaborate, our core capabilities, and what working with Astrix Digital
-            looks like.
+            Transparent insights into how we collaborate, our delivery timelines, and what working with Astrix Digital looks like.
           </p>
           <div class="faq-extra-card">
             <h4>Have a different question?</h4>
             <p>We're happy to review your technical requirements directly.</p>
-            <a href="#contact" class="btn btn-secondary btn-sm">Ask Us Anything</a>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Ask Us Anything</a>
           </div>
         </div>
 
@@ -2218,7 +2247,7 @@
           <div class="accordion-item active">
             <button type="button" class="accordion-header" id="faq-btn-1" aria-expanded="true"
               aria-controls="faq-content-1">
-              <span class="faq-q">What services does Astrix Digital provide?</span>
+              <span class="faq-q">1. What services does Astrix Digital provide?</span>
               <span class="accordion-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 9l6 6 6-6" />
@@ -2227,10 +2256,7 @@
             </button>
             <div class="accordion-content" id="faq-content-1" role="region" aria-labelledby="faq-btn-1">
               <div class="accordion-body">
-                Astrix Digital specializes in four core areas: custom Shopify store design and development, responsive
-                Webflow websites with dynamic CMS, purpose-built SaaS web applications and admin dashboards, and
-                comprehensive UI/UX design systems. Every project combines strategic design craft with
-                production-quality engineering.
+                Astrix Digital specializes in four core areas: turning Figma designs into custom Shopify stores, Webflow development with structured CMS, custom-coded website development engineered for speed and maintainability, and tailored web applications and bespoke software built around your exact business requirements.
               </div>
             </div>
           </div>
@@ -2238,7 +2264,7 @@
           <div class="accordion-item">
             <button type="button" class="accordion-header" id="faq-btn-2" aria-expanded="false"
               aria-controls="faq-content-2">
-              <span class="faq-q">Can you build a custom Shopify theme?</span>
+              <span class="faq-q">2. Can you develop a Shopify or Webflow website from my Figma design?</span>
               <span class="accordion-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 9l6 6 6-6" />
@@ -2247,10 +2273,7 @@
             </button>
             <div class="accordion-content" id="faq-content-2" role="region" aria-labelledby="faq-btn-2" hidden>
               <div class="accordion-body">
-                Yes. We design and code bespoke Shopify themes from scratch using Liquid 2.0, JSON templates, and
-                modular sections. This gives you complete brand differentiation, faster load times, and an intuitive
-                merchant editing experience in the Shopify theme customizer without the code bloat of off-the-shelf
-                marketplace themes.
+                Yes. Translating approved Figma designs into functional, responsive web interfaces is our primary specialty. We preserve spacing tokens, typography scales, interactions, and responsive behaviors so the final build matches your design files with meticulous fidelity.
               </div>
             </div>
           </div>
@@ -2258,7 +2281,7 @@
           <div class="accordion-item">
             <button type="button" class="accordion-header" id="faq-btn-3" aria-expanded="false"
               aria-controls="faq-content-3">
-              <span class="faq-q">Do you develop Webflow websites?</span>
+              <span class="faq-q">3. How long does a Shopify or Webflow project take?</span>
               <span class="accordion-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 9l6 6 6-6" />
@@ -2267,9 +2290,7 @@
             </button>
             <div class="accordion-content" id="faq-content-3" role="region" aria-labelledby="faq-btn-3" hidden>
               <div class="accordion-body">
-                Yes. We build responsive Webflow websites following the Client-First design framework. We structure
-                custom CMS collections, implement refined micro-interactions and animations, integrate custom JavaScript
-                logic where needed, and train your marketing team to manage and publish content independently.
+                Indicative delivery for appropriately scoped Shopify storefronts or Webflow websites is 7–10 days once approved designs, assets, content, and credentials are ready. Complex custom logic, custom apps, or extensive product migrations will have timelines scoped accordingly during discovery.
               </div>
             </div>
           </div>
@@ -2277,7 +2298,7 @@
           <div class="accordion-item">
             <button type="button" class="accordion-header" id="faq-btn-4" aria-expanded="false"
               aria-controls="faq-content-4">
-              <span class="faq-q">Can you create custom SaaS dashboards and web applications?</span>
+              <span class="faq-q">4. What is the timeline for a custom-coded website?</span>
               <span class="accordion-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 9l6 6 6-6" />
@@ -2286,10 +2307,7 @@
             </button>
             <div class="accordion-content" id="faq-content-4" role="region" aria-labelledby="faq-btn-4" hidden>
               <div class="accordion-body">
-                Absolutely. We architect custom SaaS frontends, internal CRM systems, customer portals, and telemetry
-                analytics dashboards. We build responsive, accessible web interfaces that connect seamlessly with REST
-                APIs and GraphQL backends, complete with authentication states, role-based controls, and interactive
-                data visualization.
+                Custom-coded websites typically require an indicative timeline of 15–20 days for scoped projects once designs and technical specifications are agreed upon. This window accounts for semantic markup, custom interactive components, responsive testing, and performance optimization.
               </div>
             </div>
           </div>
@@ -2297,7 +2315,7 @@
           <div class="accordion-item">
             <button type="button" class="accordion-header" id="faq-btn-5" aria-expanded="false"
               aria-controls="faq-content-5">
-              <span class="faq-q">How does your development process work?</span>
+              <span class="faq-q">5. How do you estimate web application and software projects?</span>
               <span class="accordion-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 9l6 6 6-6" />
@@ -2306,10 +2324,7 @@
             </button>
             <div class="accordion-content" id="faq-content-5" role="region" aria-labelledby="faq-btn-5" hidden>
               <div class="accordion-body">
-                Our process follows four clear stages: Discover (aligning on business objectives and architectural
-                requirements), Design (crafting tokenized Figma systems and prototypes), Develop (writing semantic,
-                responsive, production code), and Launch & Refine (rigorous multi-device QA, DNS migration, and video
-                training).
+                Web applications and bespoke software require a structured discovery phase. We analyze user flows, database structures, authentication models, external APIs, and infrastructure needs to deliver a transparent scope and milestone-based timeline. We never guess estimates without discovery.
               </div>
             </div>
           </div>
@@ -2317,7 +2332,7 @@
           <div class="accordion-item">
             <button type="button" class="accordion-header" id="faq-btn-6" aria-expanded="false"
               aria-controls="faq-content-6">
-              <span class="faq-q">Can you work with an existing website?</span>
+              <span class="faq-q">6. Is your development service suitable for a limited budget?</span>
               <span class="accordion-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 9l6 6 6-6" />
@@ -2326,9 +2341,7 @@
             </button>
             <div class="accordion-content" id="faq-content-6" role="region" aria-labelledby="faq-btn-6" hidden>
               <div class="accordion-body">
-                Yes. We regularly help brands audit and optimize existing Shopify stores, refactor chaotic Webflow
-                projects, or rebuild legacy web applications into modern, high-speed architectures. We start with a
-                technical and UX review to identify bottlenecks before proposing targeted refactoring.
+                Yes. We pride ourselves on being budget-conscious without sacrificing engineering discipline. We help clients prioritize high-impact requirements first and avoid expensive over-engineering or unnecessary platform subscriptions, ensuring you get maximum return on your development investment.
               </div>
             </div>
           </div>
@@ -2336,7 +2349,7 @@
           <div class="accordion-item">
             <button type="button" class="accordion-header" id="faq-btn-7" aria-expanded="false"
               aria-controls="faq-content-7">
-              <span class="faq-q">How can I discuss a project with Astrix Digital?</span>
+              <span class="faq-q">7. Can you develop custom functionality and integrations?</span>
               <span class="accordion-icon" aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 9l6 6 6-6" />
@@ -2345,11 +2358,92 @@
             </button>
             <div class="accordion-content" id="faq-content-7" role="region" aria-labelledby="faq-btn-7" hidden>
               <div class="accordion-body">
-                You can submit your project requirements using the enquiry form below or email us directly at
-                <strong>business.astrixdigital@gmail.com</strong>. We review your timeline, scope, and objectives, and
-                reply within 24 business hours to schedule an introductory technical discovery call.
+                Yes. We regularly implement custom Liquid sections, dynamic interactive product configurators, AJAX slideout carts, third-party REST and GraphQL API feeds, marketing integrations (such as Klaviyo or analytics tools), and custom database queries.
               </div>
             </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="faq-btn-8" aria-expanded="false"
+              aria-controls="faq-content-8">
+              <span class="faq-q">8. What information do you need before starting a project?</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-content" id="faq-content-8" role="region" aria-labelledby="faq-btn-8" hidden>
+              <div class="accordion-body">
+                We need approved Figma design files (or brand assets), final or draft copy, any required imagery, access to your hosting/platform accounts (Shopify collaborator access, Webflow workspace, or GitHub repo), and an agreed understanding of core deliverables.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="faq-btn-9" aria-expanded="false"
+              aria-controls="faq-content-9">
+              <span class="faq-q">9. Do you provide revisions and testing?</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-content" id="faq-content-9" role="region" aria-labelledby="faq-btn-9" hidden>
+              <div class="accordion-body">
+                Yes. Every project includes structured multi-device QA testing (mobile, tablet, and desktop viewports), cross-browser audits, accessibility checks, and an agreed revision round on staging before deployment to ensure you are completely satisfied with the implementation.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="faq-btn-10" aria-expanded="false"
+              aria-controls="faq-content-10">
+              <span class="faq-q">10. Can you provide support after launch?</span>
+              <span class="accordion-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+            <div class="accordion-content" id="faq-content-10" role="region" aria-labelledby="faq-btn-10" hidden>
+              <div class="accordion-body">
+                Yes. We provide a post-launch stabilization support window to monitor your live site, resolve any unexpected edge cases, and deliver personal video training walkthroughs for your team. Ongoing monthly technical retainers are also available for continuous feature development.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: FINAL CTA -->
+    <section class="section-final-cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="final-cta-card glass-surface glass-reflection">
+          <div class="cta-badge">LET'S BUILD TOGETHER</div>
+          <h2 id="cta-heading" class="cta-title">
+            Have a design in mind? <span class="text-gradient">Let's build it properly.</span>
+          </h2>
+          <p class="cta-support-text">
+            Tell us what you're planning. We'll discuss the requirements, recommend an appropriate development approach, and define the next steps.
+          </p>
+          <div class="cta-btn-group">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <span>Start a Project</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a href="work.html" class="btn btn-secondary btn-lg">
+              <span>Explore Our Work</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m7 7 10 10" />
+                <path d="M17 7v10H7" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -2535,28 +2629,23 @@
         <div class="footer-nav-col">
           <h4 class="footer-heading">Navigation</h4>
           <ul class="footer-link-list" role="list">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#work">Selected Work</a></li>
-            <li><a href="#why-us">Why Astrix Digital</a></li>
-            <li><a href="#process">Development Process</a></li>
-            <li><a href="#capabilities">Capabilities</a></li>
-            <li><a href="#partners">Partner Ecosystem</a></li>
-            <li><a href="#about">About the Studio</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services Overview</a></li>
+            <li><a href="work.html">Selected Work</a></li>
+            <li><a href="about.html">About Astrix Digital</a></li>
+            <li><a href="contact.html">Contact & Inquiries</a></li>
+            <li><a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer">Book Discovery Call</a></li>
           </ul>
         </div>
 
         <div class="footer-services-col">
           <h4 class="footer-heading">Services</h4>
           <ul class="footer-link-list" role="list">
-            <li><a href="#service-shopify">Shopify Theme Development</a></li>
-            <li><a href="#service-shopify">Shopify Plus Customization</a></li>
-            <li><a href="#service-webflow">Webflow Design & Development</a></li>
-            <li><a href="#service-webflow">Webflow CMS Implementation</a></li>
-            <li><a href="#service-saas">Custom SaaS Web Applications</a></li>
-            <li><a href="#service-saas">Internal Admin Dashboards</a></li>
-            <li><a href="#service-uiux">UI/UX Design Systems</a></li>
+            <li><a href="services-shopify.html">Figma to Shopify</a></li>
+            <li><a href="services-webflow.html">Webflow Development</a></li>
+            <li><a href="services-custom.html">Custom Website Development</a></li>
+            <li><a href="services-webapps.html">Web Apps & Bespoke Software</a></li>
+            <li><a href="services.html">All Capabilities & Matrix</a></li>
           </ul>
         </div>
 

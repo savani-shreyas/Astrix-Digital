@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webflow Development — Astrix Digital</title>
+  <meta name="description"
+    content="Translate Figma designs into production Webflow websites. Client-First class naming, dynamic CMS collections, smooth interactions, and 7-10 day delivery.">
+  <link rel="canonical" href="https://astrixdigital.com/services/webflow-development">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" aria-label="Astrix Digital Homepage">
+        <img src="assets/images/logo.png" alt="Astrix Digital" class="header-logo" width="170" height="42">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list" role="list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item nav-item-dropdown">
+            <a href="services.html" class="nav-link active">Services ▾</a>
+            <div class="nav-dropdown" role="menu">
+              <a href="services.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">All Services</span>
+                <span class="dropdown-item-desc">Comprehensive capabilities overview</span>
+              </a>
+              <a href="services-shopify.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Figma to Shopify</span>
+                <span class="dropdown-item-desc">Liquid 2.0 & Custom storefronts</span>
+              </a>
+              <a href="services-webflow.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Webflow Development</span>
+                <span class="dropdown-item-desc">Client-First CMS & Interactions</span>
+              </a>
+              <a href="services-custom.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Custom Development</span>
+                <span class="dropdown-item-desc">Bespoke frontend code & APIs</span>
+              </a>
+              <a href="services-webapps.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-item-title">Web Apps & Software</span>
+                <span class="dropdown-item-desc">Tailored SaaS & Web Applications</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-sm header-calendly-btn">
+          <svg class="btn-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          <span>Book Call</span>
+        </a>
+
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta">
+          <span>Start a Project</span>
+          <svg class="btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="mobileNav">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-list" role="list">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="services.html" class="mobile-nav-link">Services Overview</a></li>
+          <li><a href="services-shopify.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Figma to Shopify</a></li>
+          <li><a href="services-webflow.html" class="mobile-nav-link active" style="padding-left: 28px; font-size: 0.95rem;">↳ Webflow Development</a></li>
+          <li><a href="services-custom.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Custom Development</a></li>
+          <li><a href="services-webapps.html" class="mobile-nav-link" style="padding-left: 28px; font-size: 0.95rem;">↳ Web Apps & Software</a></li>
+          <li><a href="work.html" class="mobile-nav-link">Selected Work</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About Astrix Digital</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+          <li><a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer"
+              class="mobile-nav-link mobile-nav-calendly">📅 Book Discovery Call</a></li>
+          <li><a href="contact.html" class="mobile-nav-link mobile-nav-cta">Start a Project</a></li>
+        </ul>
+
+        <div class="mobile-drawer-footer">
+          <div class="drawer-contact-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for new projects Q2/Q3</span>
+          </div>
+          <p class="drawer-email">business.astrixdigital@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <div class="page-eyebrow">SPECIALIZED SERVICE · VISUAL CMS</div>
+        <h1 class="page-title">
+          Webflow development <span class="text-gradient">with precision.</span>
+        </h1>
+        <p class="page-lead">
+          Translate Figma designs into polished, responsive Webflow websites. Engineered following the Client-First framework with structured CMS collections, refined interactions, and zero messy class structures.
+        </p>
+
+        <div class="page-meta-pills">
+          <div class="page-meta-pill">
+            <span>Indicative Timeline:</span>
+            <strong>7–10 Days</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>Framework:</span>
+            <strong>Client-First Architecture</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>Editor Experience:</span>
+            <strong>Intuitive Visual CMS</strong>
+          </div>
+          <div class="page-meta-pill">
+            <span>Micro-Animations:</span>
+            <strong>Native 60fps Interactions</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Interactive Preview -->
+    <section style="padding: 60px 0; background: var(--color-surface); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="mockup-frame glass-surface glass-reflection" style="max-width: 1040px; margin: 0 auto;">
+          <div class="mockup-topbar">
+            <div class="breakpoint-selectors" role="tablist">
+              <span class="bp active"><span>Desktop (1440px)</span></span>
+              <span class="bp"><span>Tablet (768px)</span></span>
+              <span class="bp"><span>Mobile (390px)</span></span>
+            </div>
+            <span class="mockup-title">Webflow Designer Engine · Client-First Schema</span>
+          </div>
+          <div class="webflow-canvas-mock" style="padding: 30px;">
+            <div class="webflow-viewport-container view-desktop" style="background: #FFFFFF; border-radius: 12px; border: 1px solid var(--color-border); padding: 24px;">
+              <div class="webflow-hero-preview">
+                <div class="wf-hero-top" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                  <span class="wf-eyebrow" style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); letter-spacing: 0.06em;">VENTURE & PORTFOLIO CMS</span>
+                  <span class="precision-guide-badge">Client-First Compliant</span>
+                </div>
+                <h4 style="font-size: 1.4rem; font-weight: 800; color: var(--color-ink); line-height: 1.25; margin-bottom: 16px;">
+                  Architectural, typography-driven Webflow website built for editorial ease.
+                </h4>
+                <div class="wf-grid-preview" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px;">
+                  <div class="wf-card-tile" style="background: var(--color-surface-subtle); padding: 14px; border-radius: 8px; border: 1px solid var(--color-border);">
+                    <span style="font-size: 0.7rem; font-weight: 700; color: var(--color-ink-muted); text-transform: uppercase;">CMS COLLECTION</span>
+                    <div style="font-weight: 700; color: var(--color-ink); margin-top: 4px;">Portfolio Companies (32 Items)</div>
+                  </div>
+                  <div class="wf-card-tile" style="background: var(--color-surface-subtle); padding: 14px; border-radius: 8px; border: 1px solid var(--color-border);">
+                    <span style="font-size: 0.7rem; font-weight: 700; color: var(--color-ink-muted); text-transform: uppercase;">CMS COLLECTION</span>
+                    <div style="font-weight: 700; color: var(--color-ink); margin-top: 4px;">Founder Insights & Press (48 Items)</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CMS Collection Tree -->
+              <div style="display: flex; gap: 10px; flex-wrap: wrap; padding-top: 14px; border-top: 1px solid var(--color-border); font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-primary);">
+                <span class="concept-tag">☵ CMS: Authors</span>
+                <span class="concept-tag">☵ CMS: Categories</span>
+                <span class="concept-tag">☵ Relational References</span>
+                <span class="concept-tag">⚡ 60fps Micro-Interactions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What This Service Covers -->
+    <section class="service-detail-section" style="background: var(--color-surface-subtle);">
+      <div class="container">
+        <div class="section-header-block center-aligned">
+          <div class="section-eyebrow">WEBFLOW CAPABILITIES</div>
+          <h2 class="section-title">
+            Structured Webflow <span class="text-gradient">engineering.</span>
+          </h2>
+          <p class="section-description max-w-700">
+            We avoid common Webflow pitfalls: chaotic class names, broken mobile breakpoints, and complex CMS schemas. Everything is built cleanly for long-term marketing velocity.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 40px;">
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Client-First Class Architecture</h4>
+            <p class="service-feature-text">
+              We structure your site using standard Client-First naming conventions. Classes are intuitive, scalable, and easy for any future designer or developer to understand instantly.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Relational Dynamic CMS</h4>
+            <p class="service-feature-text">
+              Structured database collections with multi-reference relationships, custom filtering tags, and automated publishing workflows for blogs, case studies, and team directories.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Fluid 4-Breakpoint Optimization</h4>
+            <p class="service-feature-text">
+              Obsessive responsive testing across desktop (1440px+), tablet landscape, tablet portrait (768px), and mobile devices (down to 320px) without horizontal overflow.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Custom Interactions & Motion</h4>
+            <p class="service-feature-text">
+              Native Webflow IX2 interactions: smooth entrance reveals, scroll-linked progress indicators, modal overlays, and tactile hover states that respect reduced-motion settings.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">Custom JavaScript & Webhooks</h4>
+            <p class="service-feature-text">
+              When Webflow native controls hit their limit, we write clean custom JavaScript for complex filtering, calculator widgets, API webhooks, and third-party form routing.
+            </p>
+          </div>
+          <div class="service-feature-card">
+            <h4 class="service-feature-title">SEO & OpenGraph Configuration</h4>
+            <p class="service-feature-text">
+              Dynamic meta titles, automated OpenGraph image sharing tags, XML sitemap generation, structured semantic schema, and 301 redirect management.
+            </p>
+          </div>
+        </div>
+
+        <!-- Typical Deliverables Box -->
+        <div class="deliverables-box">
+          <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--color-ink);">Typical Webflow Deliverables</h3>
+          <p style="color: var(--color-ink-muted); margin-top: 8px;">What you receive at the completion of your Webflow project:</p>
+
+          <div class="deliverables-grid">
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">✓</div>
+              <div>
+                <div class="deliverable-title">Full Workspace Transfer</div>
+                <div class="deliverable-desc">Clean transfer of the complete Webflow project into your company's Webflow workspace.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">✓</div>
+              <div>
+                <div class="deliverable-title">Central Styleguide Page</div>
+                <div class="deliverable-desc">A dedicated internal page containing your typography scale, color tokens, and button components.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">✓</div>
+              <div>
+                <div class="deliverable-title">Accessible CMS Setup</div>
+                <div class="deliverable-desc">Configured fields with helpful editor hints and character limits for your content writers.</div>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <div class="deliverable-icon-check">✓</div>
+              <div>
+                <div class="deliverable-title">Editor Training Walkthrough</div>
+                <div class="deliverable-desc">Custom video demonstration walking your non-technical team through adding and editing content.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicative Delivery Timeline & Qualification -->
+        <div class="timeline-qual-callout">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-ink); margin-bottom: 6px;">
+            Indicative Timeline: 7–10 Business Days
+          </h4>
+          <p>
+            Indicative timelines apply to appropriately scoped projects once required content, assets, access, and approvals are ready. Final delivery dates depend on project complexity and agreed requirements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Webflow FAQs -->
+    <section class="section-faq" style="background: var(--color-surface);">
+      <div class="container faq-container">
+        <div class="faq-intro">
+          <div class="section-eyebrow">WEBFLOW QUESTIONS</div>
+          <h2 class="section-title">Common questions about Webflow development.</h2>
+          <p class="section-description">Clear answers regarding hosting, CMS limits, and site ownership.</p>
+        </div>
+
+        <div class="accordion-list">
+          <div class="accordion-item active">
+            <button type="button" class="accordion-header" id="wf-faq-1" aria-expanded="true" aria-controls="wf-content-1">
+              <span class="faq-q">Can my marketing team edit content in Webflow easily?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="wf-content-1" role="region" aria-labelledby="wf-faq-1">
+              <div class="accordion-body">
+                Yes. Webflow features an intuitive "Editor" mode that lets non-technical team members update copy, replace images, and publish new blog posts directly on the live page without risking breaking layout styles.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="wf-faq-2" aria-expanded="false" aria-controls="wf-content-2">
+              <span class="faq-q">Do you follow a recognized development standard like Client-First?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="wf-content-2" role="region" aria-labelledby="wf-faq-2" hidden>
+              <div class="accordion-body">
+                Yes. We strictly adhere to the Finsweet Client-First framework. This guarantees consistent class names, fluid rem typography, and organized component structures that any experienced Webflow developer can build upon seamlessly.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" id="wf-faq-3" aria-expanded="false" aria-controls="wf-content-3">
+              <span class="faq-q">How does handover work? Do I own the Webflow site?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6" /></svg></span>
+            </button>
+            <div class="accordion-content" id="wf-content-3" role="region" aria-labelledby="wf-faq-3" hidden>
+              <div class="accordion-body">
+                You have 100% ownership. Upon project completion and approval, we transfer the full Webflow site directly to your Webflow dashboard/workspace. We never hold client code hostage.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Call to Action -->
+    <section class="section-final-cta">
+      <div class="container">
+        <div class="final-cta-card glass-surface glass-reflection">
+          <div class="cta-badge">LET'S BUILD YOUR WEBFLOW SITE</div>
+          <h2 class="cta-title">
+            Have a Webflow project in mind? <span class="text-gradient">Let's build it properly.</span>
+          </h2>
+          <p class="cta-support-text">
+            Share your goals and Figma designs. We'll outline the CMS architecture, confirm the 7–10 day delivery window, and get started.
+          </p>
+          <div class="cta-btn-group">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <span>Start Webflow Project</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a href="work.html" class="btn btn-secondary btn-lg">
+              <span>Explore Webflow Work</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m7 7 10 10" />
+                <path d="M17 7v10H7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-container">
+            <img src="assets/images/logo.png" alt="Astrix Digital" class="footer-logo" width="180" height="45">
+          </div>
+          <p class="footer-mission">
+            Astrix Digital is a digital development studio creating high-performing Shopify stores, Webflow websites, and custom digital products. Built with design intent and engineering rigor.
+          </p>
+          <div class="footer-status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Select Client Projects</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-link-list" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services Overview</a></li>
+            <li><a href="work.html">Selected Work</a></li>
+            <li><a href="about.html">About Astrix Digital</a></li>
+            <li><a href="contact.html">Contact & Inquiries</a></li>
+            <li><a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer">Book Discovery Call</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-link-list" role="list">
+            <li><a href="services-shopify.html">Figma to Shopify</a></li>
+            <li><a href="services-webflow.html">Webflow Development</a></li>
+            <li><a href="services-custom.html">Custom Website Development</a></li>
+            <li><a href="services-webapps.html">Web Apps & Bespoke Software</a></li>
+            <li><a href="services.html">All Capabilities & Matrix</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect-col">
+          <h4 class="footer-heading">Studio Inquiries</h4>
+          <p class="footer-subtext">Direct email to our lead developers and creative directors:</p>
+          <a href="mailto:business.astrixdigital@gmail.com" class="footer-email-link">business.astrixdigital@gmail.com</a>
+
+          <a href="https://calendly.com/astrix-digital" target="_blank" rel="noopener noreferrer" class="footer-calendly-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            <span>Book Call</span>
+          </a>
+
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/astrix.digital" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://wa.me/919662887288?text=I%20have%20a%20query%20for%20website%20development" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9l-5.05.9"></path>
+                <path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Astrix Digital. All rights reserved.
+        </p>
+
+        <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+          <span>Back to top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
